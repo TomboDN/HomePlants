@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="icon" href="media/favicon.png">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Домашние растения</title>
+</head>
+<body>
+    <header>
+        <div><img src="media/icon.png" alt=""></div>
+        <nav>
+            <div class="nav-toggle"><span></span></div>
+            <ul id="menu">
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="plants.html">Список растений</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="articles.html">Полезные статьи</a></li>
+                <li><a href="test.html">Какое растение <br> подойдёт вам?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Добро пожаловать на сайт о домашних растениях!</h1>
+            <p>Желаете узнать о том, как лучше заботиться о ваших растениях или хотите определиться с выбором нового? Наш сайт поможет вам!</p>
+            <div class="slider">
+                <div class="item">
+                    <a href="plants.html"><img src="media/orchid.jpg" alt="Список растений"></a>
+                    <div class="slideText">Список растений</div>
+                </div>
+            
+                <div class="item">
+                    <a href="gallery.html"><img src="media/azalia.jpg" alt="Галерея растений"></a>
+                    <div class="slideText">Галерея растений</div>
+                </div>
+            
+                <div class="item">
+                    <a href="articles.html"><img src="media/earth.jpg" alt="Полезные статьи"></a>
+                    <div class="slideText">Полезные статьи</div>
+                </div>
+
+                <div class="item">
+                    <a href="test.html"><img src="media/windowsil.jpg" alt="Тест на подходящее растение"></a>
+                    <div class="slideText">Тест на подходящее растение</div>
+                </div>
+            
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+            </div>
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(4)"></span>  
+            </div>
+        </section>
+    </main>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

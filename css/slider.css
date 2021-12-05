@@ -1,0 +1,117 @@
+.slider{
+    max-width: 50em;
+    position: relative;
+    margin: auto;
+    height: 40em;
+    margin-bottom: 15px;
+}
+.slider .item img {
+    object-fit: cover;
+    width: 50em;
+    height: 40em;
+    border: none !important;
+    box-shadow: none !important;
+}
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slideText {
+    background:rgba(128, 128, 128, 0.658);
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    left: 50%;
+    top: 82%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+.slider-dots {
+    padding-bottom: 1em;
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 320px) {
+    .slider {
+        height: 25em;
+        max-width: 17em;
+    }
+    .slider .item img {
+        height: 25em;
+        width: 17em;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+    .slider {
+        height: 30em;
+        max-width: 20em;
+    }
+    .slider .item img {
+        height: 30em;
+        width: 20em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+    .slider {
+        max-width: 45em;
+    }
+    .slider .item img {
+        width: 45em;
+    }
+}
