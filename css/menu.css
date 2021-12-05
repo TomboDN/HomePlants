@@ -134,6 +134,12 @@ nav ul li:last-of-type:hover {
 #menu.active li {
     width: 100%;
 }
+@media (max-width: 976px) {
+    nav ul li {
+        width: 7.4em;
+        font-size: 1em;
+    }
+}
 
 @media (max-width: 768px) {
     .nav-toggle {

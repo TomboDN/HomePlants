@@ -12,7 +12,6 @@ window.onload = function () {
     }
     showQuestion();
 
-
     document.addEventListener('click', function (event) {
         event.stopPropagation();
         if (event.target.classList.contains('option') && step < quiz.length) {
@@ -54,5 +53,4 @@ window.onload = function () {
         refreshButton.classList.add('refresh');
         document.querySelector('.quiz-container').appendChild(refreshButton);
     }
-
 }

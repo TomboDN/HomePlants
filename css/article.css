@@ -9,7 +9,7 @@ aside {
     float: right;
     position: sticky;
     top: 0.5em;
-    width: 31%;
+    width: 30%;
 }
 article {
     margin-left: 1em;
@@ -77,6 +77,12 @@ aside a {
     main {
         width: 98%;
     }
+    article img {
+        height: auto;
+        width: 30em;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
     article img {
         height: auto;
         width: 30em;
