@@ -16,7 +16,6 @@ window.onload = function () {
     document.addEventListener('click', function (event) {
         event.stopPropagation();
         if (event.target.classList.contains('option') && step < quiz.length) {
-            // event.target.data
             if (result[event.target.dataset.v] != undefined) {
                 result[event.target.dataset.v]++;
             }
@@ -40,7 +39,6 @@ window.onload = function () {
 
     function showResult() {
         let key = Object.keys(result).reduce(function (a, b) { return result[a] > result[b] ? a : b });
-
         let div = document.createElement('div');
         div.classList.add('result');
         div.innerHTML = answers[key]['description'];
